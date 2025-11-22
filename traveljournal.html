@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Journal</title>
+    <style>
+        header {
+            background-color: rgb(59, 59, 212);
+            text-align: center;
+            padding: 35px 0;
+        }
+        h1 {
+            font-size: 36px;
+            color: antiquewhite;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        h2 {
+            font-size: 25px;
+            color: antiquewhite;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .countries {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .country {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            background-color: #f9f9f9;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s ease;
+            width: 250px;
+        }
+        .country:hover {
+            transform: scale(1.05);
+        }
+        .country img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .country h3 {
+            color: #333;
+            font-family: 'Cambria', serif;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Travel Journal 🌎</h1>
+        <h2>My Adventures Around The World</h2>
+    </header>
+
+    <section class="countries">
+        <a href="pasta.html" class="country"> 
+            <img src="just perfect.jpg" alt="Italy">
+            <h3>Italy</h3>
+        </a>
+        <a href="states.html" class="country">
+            <img src="usa.jpg" alt="Freedom Land">
+            <h3>United States</h3>
+        </a>
+        <a href="country.html" class="country">
+            <img src="green.jpg" alt="Greenland">
+            <h3>Greenland</h3>
+        </a>
+    </section>
+</body>
+</html>
